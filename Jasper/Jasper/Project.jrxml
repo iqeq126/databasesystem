@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Project" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="502e2783-4a03-4cd5-82e2-457e93b806aa">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MyDataAdapters.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Project]]>
+	</queryString>
+	<field name="PID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PID"/>
+		<property name="com.jaspersoft.studio.field.label" value="PID"/>
+	</field>
+	<field name="PName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PName"/>
+		<property name="com.jaspersoft.studio.field.label" value="PName"/>
+	</field>
+	<field name="PField" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PField"/>
+		<property name="com.jaspersoft.studio.field.label" value="PField"/>
+	</field>
+	<field name="PDetails" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PDetails"/>
+		<property name="com.jaspersoft.studio.field.label" value="PDetails"/>
+	</field>
+	<field name="goalMoney" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="goalMoney"/>
+		<property name="com.jaspersoft.studio.field.label" value="goalMoney"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<staticText>
+				<reportElement x="192" y="54" width="188" height="30" uuid="7420eac5-2aa8-424c-9d2d-2ad4d8f98574"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Project Information]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="116" height="30" uuid="03276be8-f6cc-4701-a40d-33c023344755">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="68f8b70f-60ef-4f19-9178-5ee5e9d07e21"/>
+				</reportElement>
+				<textElement>
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="116" y="0" width="114" height="30" uuid="8b358bcc-56b8-4b0c-923e-de3328ac0fcb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="941e5dfd-ab57-406e-9b7c-45337c0f5afd"/>
+				</reportElement>
+				<textElement>
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="0" width="114" height="30" uuid="2c68ea90-6fd0-4518-8eeb-25b2bf099d1a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a671a9ab-0ac0-449e-9121-e5972af43c88"/>
+				</reportElement>
+				<textElement>
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PField]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="0" width="114" height="30" uuid="fcd22468-25f9-4b1c-a4ec-5cface07c922">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f115a407-aeca-490c-87c7-88ec7365a740"/>
+				</reportElement>
+				<textElement>
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PDetails]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="458" y="0" width="114" height="30" uuid="00f64c66-6583-42f9-bbe8-0d17c8875894">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="454246f8-57eb-4f16-81fd-2d3a3fb94c5d"/>
+				</reportElement>
+				<textElement>
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[goalMoney]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="116" height="30" uuid="380aaf84-d48c-441a-bda1-96a3e6b0bfc9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="68f8b70f-60ef-4f19-9178-5ee5e9d07e21"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{PID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="0" width="114" height="30" uuid="c609db19-9a1e-4368-b6b9-ff53e6d30db1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="941e5dfd-ab57-406e-9b7c-45337c0f5afd"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{PName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="114" height="30" uuid="70bd12eb-e14f-49ee-aec2-05fddd8f871e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a671a9ab-0ac0-449e-9121-e5972af43c88"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{PField}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="0" width="114" height="30" uuid="0ce22516-947a-4419-95be-cb8a49ca61b4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f115a407-aeca-490c-87c7-88ec7365a740"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{PDetails}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="458" y="0" width="114" height="30" uuid="eb476d8a-207d-4bcc-b4d0-66b363254b06">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="454246f8-57eb-4f16-81fd-2d3a3fb94c5d"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{goalMoney}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-10" y="30" width="572" height="1" uuid="e7b6aad1-8a58-4fc1-ab36-c1880e3cb45b"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

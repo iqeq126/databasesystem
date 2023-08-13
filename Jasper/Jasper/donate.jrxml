@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="donate" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="418173b6-6992-489a-a4a8-557feb6c0be1">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MyDataAdapters.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from donate]]>
+	</queryString>
+	<field name="donated_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="donated_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="donated_id"/>
+	</field>
+	<field name="member_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="member_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="member_id"/>
+	</field>
+	<field name="DTIME" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="DTIME"/>
+		<property name="com.jaspersoft.studio.field.label" value="DTIME"/>
+	</field>
+	<field name="DMONEY" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="DMONEY"/>
+		<property name="com.jaspersoft.studio.field.label" value="DMONEY"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="50" width="200" height="30" uuid="a44be2dc-cf41-4d7d-a0fb-e0bad4a87391"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Donate Information]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="143" height="30" uuid="16a7acd5-4850-495f-ac08-3b8280237652">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2910ea2b-62e2-4712-85e7-20c3fbab53b8"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[donated_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="0" width="143" height="30" uuid="f3a1eeeb-e90f-42cf-b795-c2f108eed982">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="47e89533-7b7d-46a3-aa98-98df135b0e22"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[member_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="286" y="0" width="143" height="30" uuid="cc81c0d7-980a-4e7f-be19-ad07fc13a194">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="131abb0b-f5bb-4895-86e8-3950f2988843"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[DTIME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="0" width="143" height="30" uuid="aa91f528-d632-4ea1-b83b-fced325b3d8f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3fc4c047-1045-451b-8fe1-b34036adad45"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[DMONEY]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="143" height="20" uuid="7333fd80-b7a2-45fc-9eaf-b6abd864e9b0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2910ea2b-62e2-4712-85e7-20c3fbab53b8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{donated_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="0" width="143" height="20" uuid="0bc90a27-e54a-4de9-b819-9cfe91f092fd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="47e89533-7b7d-46a3-aa98-98df135b0e22"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{member_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="0" width="143" height="20" uuid="ba29d358-96c5-4045-b070-a65d65742555">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="131abb0b-f5bb-4895-86e8-3950f2988843"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{DTIME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="429" y="0" width="143" height="20" uuid="3b261f4f-ac86-4136-9399-9960d827e180">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3fc4c047-1045-451b-8fe1-b34036adad45"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{DMONEY}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="20" width="500" height="1" uuid="522a8c0f-fd1b-4d1d-ba01-300558b83282"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="18" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="23" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="22" splitType="Stretch"/>
+	</summary>
+</jasperReport>

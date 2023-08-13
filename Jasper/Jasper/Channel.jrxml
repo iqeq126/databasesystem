@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report01" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dbd1a94a-fd2d-4fac-835b-b6f8c3001b61">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MyDataAdapters.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Channel]]>
+	</queryString>
+	<field name="CID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CID"/>
+	</field>
+	<field name="POINT" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="POINT"/>
+		<property name="com.jaspersoft.studio.field.label" value="POINT"/>
+	</field>
+	<field name="RATING" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="RATING"/>
+		<property name="com.jaspersoft.studio.field.label" value="RATING"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="30" width="192" height="30" uuid="b620e675-1af5-4d07-a964-1aabec31b37f"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Channel Information]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="25" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="60" height="30" uuid="848e2204-9d42-4bd9-a547-3644cea2a2d3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ba493089-139f-4fb7-a7f1-01148f2bdee6"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[CID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="0" width="58" height="30" uuid="e343ca0f-6462-4ab8-b8e2-33e67e1d3afe">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eda20450-e0be-4f64-b17c-ef5954fc32fa"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[POINT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="0" width="78" height="30" uuid="829d4eb7-0059-4ec4-919d-6fc90fbd3067">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cc9c183f-596f-49db-8381-08b775acee54"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[RATING]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="60" height="20" uuid="c658d5a9-94f1-4634-b45e-405e3b18d26a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ba493089-139f-4fb7-a7f1-01148f2bdee6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{CID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="-1" width="58" height="20" uuid="440a6cae-3e8b-40ae-9e06-1be1133681fb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eda20450-e0be-4f64-b17c-ef5954fc32fa"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{POINT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="-1" width="58" height="20" uuid="ac9e5ce7-80ed-430b-bff6-5c7354197788">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cc9c183f-596f-49db-8381-08b775acee54"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RATING}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-1" y="10" width="440" height="1" uuid="d27eb5e1-a1f5-4e5e-9e5a-1c63fd2c92ee"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="26" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="21" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="26" splitType="Stretch"/>
+	</summary>
+</jasperReport>

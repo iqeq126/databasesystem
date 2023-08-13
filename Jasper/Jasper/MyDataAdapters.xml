@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>data02</name><driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver><username>iqeq126</username><password>1320</password><savePassword>true</savePassword><url>jdbc:sqlserver://DESKTOP-OPBS2NM:1433;databaseName=RewardCrowdFunding;encrypt=false; </url><database></database><serverAddress></serverAddress><classpath>C:\Users\HP\Downloads\sqljdbc_11.2.0.0_kor\sqljdbc_11.2\kor\mssql-jdbc-11.2.0.jre11.jar</classpath></jdbcDataAdapter>

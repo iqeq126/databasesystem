@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Plan_" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="15822add-1c9e-4fc8-a339-c16b0aba0f63">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MyDataAdapters.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Plan_]]>
+	</queryString>
+	<field name="MID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MID"/>
+		<property name="com.jaspersoft.studio.field.label" value="MID"/>
+	</field>
+	<field name="PID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PID"/>
+		<property name="com.jaspersoft.studio.field.label" value="PID"/>
+	</field>
+	<field name="START_TIME" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="START_TIME"/>
+		<property name="com.jaspersoft.studio.field.label" value="START_TIME"/>
+	</field>
+	<field name="END_TIME" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="END_TIME"/>
+		<property name="com.jaspersoft.studio.field.label" value="END_TIME"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="212" y="50" width="148" height="30" uuid="e0284759-d191-482d-bbf3-13d32895916d"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Plan Information]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="143" height="30" uuid="62dc8eda-6795-46f1-a405-de4493bd9123">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8aafc964-0c16-4e48-a6a2-6992e94af6f6"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[MID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="0" width="143" height="30" uuid="65a27974-8a48-48f1-9575-267ac8958946">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5aff2e9-d7df-415e-b6c6-aa8824fc32d1"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[PID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="286" y="0" width="143" height="30" uuid="e615f46a-2461-4005-9af4-906bd3ea1113">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a4d91df8-eebe-4867-ba59-1d0c6ed42a04"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[START_TIME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="0" width="143" height="30" uuid="952a1b7d-719b-4b72-9ca2-7ece934e401a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3cb35ac-e2ed-47c5-8eb1-e1419d26ece7"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[END_TIME]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="-31" width="143" height="30" uuid="1dd12c52-fa8c-48ed-a977-7452c3a851df">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8aafc964-0c16-4e48-a6a2-6992e94af6f6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{MID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="-31" width="143" height="30" uuid="0bd9869d-c68c-4060-b2d6-3b39697b006d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5aff2e9-d7df-415e-b6c6-aa8824fc32d1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{PID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="-31" width="143" height="30" uuid="8a56e73e-5fc1-44e8-8134-d157b65f5d96">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a4d91df8-eebe-4867-ba59-1d0c6ed42a04"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{START_TIME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="429" y="-31" width="143" height="30" uuid="72718f1f-ec3b-4e60-abad-bdbdbc17f4ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3cb35ac-e2ed-47c5-8eb1-e1419d26ece7"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{END_TIME}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-1" y="-17" width="561" height="1" uuid="cf3e31ed-5f27-49f3-bd0a-2a4705c23ae2"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

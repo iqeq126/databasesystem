@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LogTable" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d5c5109d-dddc-4174-be7e-d645f6b57a55">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MyDataAdapters.xml"/>
+	<queryString language="SQL">
+		<![CDATA[select * from LogTable]]>
+	</queryString>
+	<field name="logdate" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="logdate"/>
+		<property name="com.jaspersoft.studio.field.label" value="logdate"/>
+	</field>
+	<field name="logUser" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="logUser"/>
+		<property name="com.jaspersoft.studio.field.label" value="logUser"/>
+	</field>
+	<field name="logTableName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="logTableName"/>
+		<property name="com.jaspersoft.studio.field.label" value="logTableName"/>
+	</field>
+	<field name="logOperation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="logOperation"/>
+		<property name="com.jaspersoft.studio.field.label" value="logOperation"/>
+	</field>
+	<field name="logRecord" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="logRecord"/>
+		<property name="com.jaspersoft.studio.field.label" value="logRecord"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="170" y="50" width="220" height="30" uuid="dfcbe0b0-ec6c-4c8b-aa87-a751bd5a454f"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LogTable Information]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="116" height="30" uuid="406ede0c-6267-4593-9a36-1f07f500ebd8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7857871a-56c5-40c3-a7bf-6fdaccd56e1f"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[logdate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="116" y="0" width="114" height="30" uuid="9363b285-3ec6-491a-a48e-dc7be1564a44">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="467a6c49-720d-465f-b505-6495b37902c8"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[logUser]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="0" width="114" height="30" uuid="a9b21449-fbcb-4406-b703-1f3fe28f1c97">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="69b845cb-8b13-4fa6-af3b-1242c0d88317"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[logTableName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="0" width="114" height="30" uuid="fd726073-2f78-454b-9f83-9652084ed2e1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9faa93b8-5ab7-497c-9610-30febfcb3489"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[logOperation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="458" y="0" width="114" height="30" uuid="ec93ff53-70ee-4aea-a100-07667ddc5c40">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d82d74ae-766d-44d1-bc4b-90b0497ec201"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[logRecord]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="116" height="30" uuid="2e34d4b7-7820-439d-8a0d-0cb646c1dbc7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7857871a-56c5-40c3-a7bf-6fdaccd56e1f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{logdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="0" width="114" height="30" uuid="52a34c24-5d80-400e-ad8e-d4d3b3d82c98">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="467a6c49-720d-465f-b505-6495b37902c8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{logUser}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="114" height="30" uuid="b435d160-7200-4fa3-a597-af01b8adf8d6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="69b845cb-8b13-4fa6-af3b-1242c0d88317"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{logTableName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="0" width="114" height="30" uuid="5353924a-8b21-49fb-979f-9dec78d36ac1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9faa93b8-5ab7-497c-9610-30febfcb3489"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{logOperation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="458" y="0" width="114" height="30" uuid="19a717dc-c084-4092-be17-f3b3f5aad8ab">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d82d74ae-766d-44d1-bc4b-90b0497ec201"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{logRecord}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="15" width="561" height="1" uuid="2d3696e3-a43e-4891-b983-c51df9030e3c"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
